@@ -1,0 +1,22 @@
+.navbar {
+    position: sticky;
+    top: 0;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+.navbar-logo {
+    height: 15vmin;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+}
+

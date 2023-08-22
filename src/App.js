@@ -1,58 +1,21 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-//function App() {
-//  return (
-//    <div className="App">
-//      <header className="App-header">
-//        <img src={logo} className="App-logo" alt="logo" />
-//        <p>
-//          Edit <code>src/App.js</code> and save to reload.
-//        </p>
-//        <a
-//          className="App-link"
-//          href="https://reactjs.org"
-//          target="_blank"
-//          rel="noopener noreferrer"
-//        >
-//          Learn React
-//        </a>
-//      </header>
-//    </div>
-//  );
-//}
-
-//export default App;
-// import //itemlistcontainer.js
-
-import Button from './components/navbar/cartwidget'
-import Brand from './components/brand/brand'
-import {useState} from 'react'
+import './App.css'
+import NavBar from './components/navbar/navbar'
+import ItemListContainer from './components/itemlistcontainer/itemlistcontainer'
+import "bootstrap"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 
 
 
-const App = () => {
-
-  const [counter, setCounter] = useState (0)
-
-  const handleSetCounter = () => {
-    setCounter(counter + 1)
-  }
+function App () {
 
   return (
-    <div>
-      <Brand
-        text='Magna'
-        id='titulo'
-        className='title'
-      />
-      <Button
-        text={`Carrito: ${counter}`} 
-        onClick={handleSetCounter}
-      />
+    <div className='NavBar'>
+      <NavBar/>
+      <ItemListContainer greeting={'Centro de entrenamiento de Artes Marciales y Deportes de Combate'} />
     </div>
+    
   )
 }
 
-export default App
+export default App 
