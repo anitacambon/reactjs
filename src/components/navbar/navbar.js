@@ -1,6 +1,7 @@
 import CartWidget from "../cartwidget/cartwidget"
 import logo_header from './img/logo_header.jpeg'
 import './css/style.css'
+import { NavLink } from "react-router-dom"
 
 
 const NavBar = () => {
@@ -17,21 +18,21 @@ const NavBar = () => {
                         <li className="nav-item">
                             <a className="nav-link active" aria-current="page" href="#">Actividades</a>
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <a className="nav-link active" href="#">Escuelita</a>
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <a className="nav-link active" href="#">Horarios</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a className="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li className="nav-item dropdown">
+                            <NavLink className="nav-link active dropdown-toggle" to='/' role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Tienda
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a className="dropdown-item" href="#">Indumentaria</a></li>
-                                <li><a className="dropdown-item" href="#">Accesorios</a></li>
-                                <li><a className="dropdown-item" href="#">Abonos</a></li>
-                                <li><a className="dropdown-item" href="#">Eventos</a></li>
+                            </NavLink>
+                            <ul className="dropdown-menu">
+                                <li><NavLink className="dropdown-item" to={`/categoria/indumentaria`}>Indumentaria</NavLink></li>
+                                <li><NavLink className="dropdown-item" to={`/categoria/accesorios`}>Accesorios</NavLink></li>
+                                <li><NavLink className="dropdown-item" to={`/categoria/abonos`}>Abonos</NavLink></li>
+                                <li><NavLink className="dropdown-item" to={`/categoria/eventos`}>Eventos</NavLink></li>
                             </ul>
                         </li>
                     </ul>
