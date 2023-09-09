@@ -1,4 +1,4 @@
-const product = [
+const products = [
 
     {
         id: 1001,
@@ -16,7 +16,7 @@ const product = [
         talle: "M",
         unidades: 500,
         precio: 5000,
-        img: "lycra_julia.jpeg" 
+        img: "lycra_julia.jpeg"
     },
     {
         id: 1003,
@@ -246,26 +246,21 @@ const product = [
     }
 ]
 
-export const getProduct = () => {
+export const getProducts = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(product)
+            resolve(products)
         }, 500)
     })
 }
 
-export const getProductById = (productId) => {
-    return new Promise((resolve) => {
+export const getProductById = (id) => {
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve(product.find(prod => prod.id === productId))
+            const product = products.find((prod) => prod.id === id)
+            if (product) return resolve(product)
+            return reject({ error: 'No encontrado' })
         }, 500)
     })
 }
 
-export const getProductByCategoria = (categoriaId) => {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve(product.map(prod => prod.categoria === categoriaId))
-        },500)
-    })
-}
