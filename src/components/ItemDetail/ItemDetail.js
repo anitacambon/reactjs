@@ -10,11 +10,14 @@ const ItemDetail = ({ id, nombre, categoria, talle, unidades, precio, img }) => 
                 </h2>
             </header>
             <picture>
-                <img src={img} alt={nombre} className='ItemImag' />
+                <img src={`/img/${img}`} alt={nombre} className='ItemImag' />
             </picture>
             <section>
                 <p className='Info'>
                     Categoria: {categoria}
+                </p>
+                <p className='Info'>
+                    Código: {id}
                 </p>
                 <p className='Info'>
                     Talle: {talle}

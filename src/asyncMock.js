@@ -1,4 +1,4 @@
-import { reject } from "core-js/fn/promise"
+
 
 const products = [
 

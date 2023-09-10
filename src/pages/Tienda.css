@@ -1,0 +1,45 @@
+.tienda {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: min-content;
+}
+
+.greetingTienda {
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.CardItem {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(182, 182, 173, 0.342);
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.categoriaTienda {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.imagenTienda {
+    width: 15vw;
+}
+
+.infoTienda {
+    display: grid;
+    grid-column: 1;
+    
+}
+
+.precioTienda {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.botonTienda{
+    text-decoration: none;
+    color: black;
+}
