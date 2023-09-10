@@ -27,6 +27,7 @@ const Products = () => {
                 <div className="flex flex-col gap-2 py-8">
                     <h3 className="font-bold text-2xl">{nombre}</h3>
                     <span className="bg-indigo-700 text-white self-start py-0.5 px-3 rounded-md text-sm">{categoria}</span>
+                    <span className="bg-indigo-700 text-white self-start py-0.5 px-3 rounded-md text-sm">{unidades}</span>
                     <strong className="mb-4">${precio}</strong>
                     <Link to={`/products/${id}`} className="border-2 border-indigo-700 text-indigo-700 px-4 py-0.5 w-[120px] rounded-md text-sm">
                         Ver más...

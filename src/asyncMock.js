@@ -1,3 +1,5 @@
+import { reject } from "core-js/fn/promise"
+
 const products = [
 
     {
@@ -264,3 +266,12 @@ export const getProductById = (id) => {
     })
 }
 
+export const getProductByCategoria = (categoria) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const product = products.find((prod) => prod.categoria === categoria)
+            if(product) return resolve(product)
+            return reject({error: 'No encontrado'})
+        }, 500)
+    })
+}

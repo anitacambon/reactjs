@@ -7,6 +7,8 @@ import Horarios from './pages/Horarios'
 import Products from './pages/Tienda'
 import Contacto from './pages/Contacto'
 import NavBar from './components/navbar/navbar'
+import ItemListContainer from './components/itemlistcontainer/itemlistcontainer'
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 
 import "bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -26,7 +28,8 @@ function App() {
           <Route path='/horarios' element={<Horarios />} />
           <Route path='/contacto' element={<Contacto />} />
           <Route path='/ver-todo' element={<Products />} />
-          
+          <Route path='/category/:id' element={<ItemListContainer />} />
+          <Route path='/item/:id' element={<ItemDetailContainer />} />
         </Routes>
       </BrowserRouter>
     </div>
