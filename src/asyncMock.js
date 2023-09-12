@@ -266,12 +266,10 @@ export const getProductById = (id) => {
     })
 }
 
-export const getProductByCategoria = (categoria) => {
-    return new Promise((resolve, reject) => {
+export const getProductByCategoria = (productosCategoria) => {
+    return new Promise((resolve) => {
         setTimeout(() => {
-            const product = products.find((prod) => prod.categoria === categoria)
-            if(product) return resolve(product)
-            return reject({error: 'No encontrado'})
+            resolve(products.filter(prod => prod.categoria === productosCategoria))
         }, 500)
     })
 }
