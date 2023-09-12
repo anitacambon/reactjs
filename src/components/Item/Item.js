@@ -1,30 +1,47 @@
-import { Link } from "react-router-dom"
+import { useEffect, useState } from 'react'
+import { getProducts } from '../../asyncMock'
+import { Link } from 'react-router-dom'
+import './Item.css'
+// import { getRate } from '../../utils/getRate'
 
+const Item = () => {
+    const [loading, setLoading] = useState(false)
+    const [products, setProducts] = useState([])
 
-const Item = ({ id, nombre, categoria, talle, unidades, precio, img }) => {
-    return (
-        <article className='CardItem'>
-            <header className='Header'>
-                <h2 className='ItemHeader'>
-                    {nombre}
-                </h2>
-            </header>
-            <picture>
-                <img src={img} alt={nombre} className='ItemImag' />
-            </picture>
-            <section>
-                <p className='Info'>
-                    Precio: ${precio}
-                </p> 
-                <p className='Info'>
-                    Stock disponible: {unidades}
-                </p> 
-            </section>
-            <footer>
-                <Link to={ `/item/${id}` } className='Option'>Ver detalle</Link>
-            </footer>
-        </article>
-    )
+    useEffect(() => {
+        setLoading(true)
+        getProducts()
+            .then((products) => setProducts(products))
+            .catch(error => console.log(error))
+            .finally(() => setLoading(false))
+    }, [])
+
+    if (loading) return <p className="" >Cargando...</p>
+
+    return <section className="tienda container" >
+        <div className="row align-items-center">
+            <h1 className="greetingTienda">
+                Tienda
+            </h1>
+            {products.map(({ id, nombre, categoria, unidades, precio, img }) => (
+                <article key={id} className="CardItem col">
+                    <picture>
+                        <img src={`/img/${img}`} alt={nombre} className="imagenTienda" />
+                    </picture>
+                    <div className="infoTienda">
+                        <h3 className="nombreTienda">{nombre}</h3>
+                        <span className="precioTienda">${precio}</span>
+                        <span className="unidadesTienda">Stock: {unidades}</span>
+                        <span className="categoriaTienda">{categoria}</span>
+                        <button type="button" className="btn btn-warning"><Link to={`/products/${id}`} className="botonTienda">
+                            Ver más...
+                        </Link></button>
+
+                    </div>
+                </article>
+            ))}
+        </div>
+    </section>
 }
 
 export default Item

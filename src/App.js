@@ -4,7 +4,7 @@ import Home from './pages/Home'
 import Actividades from './pages/Actividades'
 import Escuelita from './pages/Escuelita'
 import Horarios from './pages/Horarios'
-import Products from './pages/Tienda'
+import Item from './components/Item/Item'
 import Contacto from './pages/Contacto'
 import NavBar from './components/navbar/navbar'
 import ItemListContainer from './components/itemlistcontainer/itemlistcontainer'
@@ -27,7 +27,7 @@ function App() {
           <Route path='/escuelita' element={<Escuelita />} />
           <Route path='/horarios' element={<Horarios />} />
           <Route path='/contacto' element={<Contacto />} />
-          <Route path='/ver-todo' element={<Products />} />
+          <Route path='/ver-todo' element={<Item />} />
           <Route path='/category/:id' element={<ItemListContainer />} />
           <Route path='/products/:id' element={<ItemDetailContainer />} />
         </Routes>
