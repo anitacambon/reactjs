@@ -259,7 +259,7 @@ export const getProducts = () => {
 export const getProductById = (id) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            const product = products.find((prod) => prod.id === id)
+            const product = products.find((prod) => prod.id === parseInt(id))
             if (product) return resolve(product)
             return reject({ error: 'No encontrado' })
         }, 500)
