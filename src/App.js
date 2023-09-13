@@ -14,6 +14,7 @@ import "bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 
+
 function App() {
   return (
     <div className='App'>
@@ -28,7 +29,7 @@ function App() {
           <Route path='/horarios' element={<Horarios />} />
           <Route path='/contacto' element={<Contacto />} />
           <Route path='/ver-todo' element={<Item />} />
-          <Route path='/category/:id' element={<ItemListContainer />} />
+          <Route path='/categoria/:categoria' element={<ItemListContainer />} />
           <Route path='/products/:id' element={<ItemDetailContainer />} />
         </Routes>
       </BrowserRouter>

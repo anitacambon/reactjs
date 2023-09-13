@@ -225,7 +225,7 @@ const products = [
     {
         id: 12002,
         nombre: "Pase 8 clases",
-        categoria: "cuota",
+        categoria: "abonos",
         unidades: 500,
         precio: 4500,
         img: "logo.jpeg"
@@ -233,7 +233,7 @@ const products = [
     {
         id: 12003,
         nombre: "Pase 12 clases",
-        categoria: "cuota",
+        categoria: "abonos",
         unidades: 500,
         precio: 6000,
         img: "logo.jpeg"
@@ -241,7 +241,7 @@ const products = [
     {
         id: 12004,
         nombre: "Pase libre",
-        categoria: "cuota",
+        categoria: "abonos",
         unidades: 500,
         precio: 10500,
         img: "logo.jpeg"
@@ -266,10 +266,13 @@ export const getProductById = (id) => {
     })
 }
 
-export const getProductByCategoria = (productosCategoria) => {
-    return new Promise((resolve) => {
+export const getProductByCategoria = (categoria) => {
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve(products.filter(prod => prod.categoria === productosCategoria))
+            const productosCategoria = products.filter((prod) => prod.categoria === categoria)
+            if (productosCategoria) return resolve(productosCategoria)
+            return reject({ error: 'No encontrado'})
+            
         }, 500)
     })
 }

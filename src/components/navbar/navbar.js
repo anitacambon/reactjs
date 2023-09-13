@@ -10,19 +10,19 @@ const routes = [
         text: 'Ver todo'
     },
     {
-        path: '/indumentaria',
-        text: 'Indumentaria'
+        path: '/categoria/indumentaria',
+        text: 'Indumentaria',
     },
     {
-        path: '/accesorios',
+        path: '/categoria/accesorios',
         text: 'Accesorios'
     },
     {
-        path: '/abonos',
+        path: '/categoria/abonos',
         text: 'Abonos'
     },
     {
-        path: '/eventos',
+        path: '/categoria/eventos',
         text: 'Eventos'
     },
 
@@ -67,8 +67,8 @@ const NavBar = () => {
                     </ul>
                     <CartWidget />
                 </div>
-            </div>
-        </nav>
+            </div >
+        </nav >
     )
 }
 
