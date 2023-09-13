@@ -34,7 +34,7 @@ const NavBar = () => {
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
                 <img className="navbar-logo" src={logo_header} alt="logo"></img>
-                <NavLink className="navbar-brand" to='./home' >Academia MAGNA</NavLink>
+                <NavLink className="navbar-brand" to='/' >Academia MAGNA</NavLink>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
