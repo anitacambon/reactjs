@@ -6,7 +6,6 @@ import { useParams } from 'react-router-dom'
 
 const ItemListContainer = ({ greeting }) => {
     const [products, setProducts] = useState([])
-
     const { categoria } = useParams()
 
     useEffect(() => {

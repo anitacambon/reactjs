@@ -1,15 +1,15 @@
-
 import { Link } from 'react-router-dom'
 import './Item.css'
-// import { getRate } from '../../utils/getRate'
+
+<h1 className="greetingTienda">
+    Tienda
+</h1>
 
 const Item = ({ id, nombre, categoria, unidades, precio, img }) => {
     return (
         <section className="tienda container" >
             <div className="row align-items-center">
-                <h1 className="greetingTienda">
-                    Tienda
-                </h1>
+
                 <article key={id} className="CardItem col">
                     <picture>
                         <img src={`/img/${img}`} alt={nombre} className="imagenTienda" />
