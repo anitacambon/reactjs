@@ -20,16 +20,6 @@ const ItemListContainer = ({ greeting }) => {
             })
     }, [categoria])
 
-    useEffect(() => {
-        getProducts()
-            .then(response => {
-                setProducts(response)
-            })
-            .catch(error => {
-                console.error(error)
-            })
-    }, [])
-
     return (
         <div>
             <h1>{greeting}</h1>
