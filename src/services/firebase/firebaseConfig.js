@@ -1,14 +1,13 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore} from 'firebase/firestore'
+import { getFirestore } from 'firebase/firestore'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCw1j3j2ptd3ckofz3gyFOyMLA7vv420yE",
-    authDomain: "magna-439b2.firebaseapp.com",
-    projectId: "magna-439b2",
-    storageBucket: "magna-439b2.appspot.com",
-    messagingSenderId: "1076363790926",
-    appId: "1:1076363790926:web:f9219747f33e11d9fd511f",
-    measurementId: "G-ZBR8KF1MEH"
+    apiKey: "AIzaSyDtLuEgFA46wOApIL9O_bHhymVbpqQ297w",
+    authDomain: "magna-a32fa.firebaseapp.com",
+    projectId: "magna-a32fa",
+    storageBucket: "magna-a32fa.appspot.com",
+    messagingSenderId: "1011330742988",
+    appId: "1:1011330742988:web:b7802e15f7b1c204516069"
 };
 
 const app = initializeApp(firebaseConfig)
