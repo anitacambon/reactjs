@@ -16,7 +16,7 @@ const Cart = () => {
     }
     return (
         <div>
-            {cart.map(p => <CartItem key={p.id} {...p} />)}
+            {cart.map(i => <CartItem key={i.id} {...i} />)}
             <h3>Total: ${total} </h3>
             <button onClick={() => clearCart()} className="Buttom">Vaciar Carrito</button>
             <Link to='/cheackout' className="Option">Checkout</Link>
