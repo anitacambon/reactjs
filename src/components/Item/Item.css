@@ -1,8 +1,8 @@
 .tienda {
     padding: 10px;
-    display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: min-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .greetingTienda {
@@ -15,7 +15,9 @@
     padding: 10px;
     background-color: rgba(182, 182, 173, 0.342);
     width: fit-content;
+    height: fit-content;
     border-radius: 20px;
+    box-shadow: 5px 5px 5px gray;
 }
 
 .categoriaTienda {
@@ -26,12 +28,12 @@
 
 .imagenTienda {
     width: 15vw;
+    border-radius: 3%;
 }
 
 .infoTienda {
     display: grid;
     grid-column: 1;
-    
 }
 
 .precioTienda {

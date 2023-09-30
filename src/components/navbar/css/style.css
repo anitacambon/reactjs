@@ -20,3 +20,13 @@
     padding-right: 15px;
 }
 
+
+.dropdown-item {
+    overflow-x: hidden;
+}
+
+#navbarNavDropdown {
+    display: flex;
+    justify-content: right;
+    padding-right: 6%;
+}

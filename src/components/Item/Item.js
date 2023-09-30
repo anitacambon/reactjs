@@ -7,10 +7,9 @@ import './Item.css'
 
 const Item = ({ id, nombre, categoria, unidades, precio, img }) => {
     return (
-        <section className="tienda container" >
-            <div className="row align-items-center">
-
-                <article key={id} className="CardItem col">
+        <section className="tienda" >
+            
+                <article key={id} className="CardItem">
                     <picture>
                         <img src={`/img/${img}`} alt={nombre} className="imagenTienda" />
                     </picture>
@@ -24,7 +23,7 @@ const Item = ({ id, nombre, categoria, unidades, precio, img }) => {
                         </Link></button>
                     </div>
                 </article>
-            </div>
+            
         </section>
     )
 }
