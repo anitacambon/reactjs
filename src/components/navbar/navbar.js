@@ -1,4 +1,4 @@
-import CartWidget from "../cartwidget/cartwidget"
+import CartWidget from '../cartwidget/cartwidget'
 import logo_header from './img/logo_header.jpeg'
 import './css/style.css'
 import { NavLink } from "react-router-dom"
@@ -52,6 +52,7 @@ const NavBar = () => {
                         <li className="nav-item">
                             <NavLink className="nav-link active" to='/contacto' >Contacto</NavLink>
                         </li>
+                        
                         <li className="nav-item dropdown">
                             <NavLink className="nav-link active dropdown-toggle" to='/tienda' role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Tienda
@@ -64,8 +65,10 @@ const NavBar = () => {
                                 }
                             </ul>
                         </li>
+                        <li ><CartWidget /></li>
+                        
                     </ul>
-                    <CartWidget />
+                    
                 </div>
             </div >
         </nav >

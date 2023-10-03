@@ -1,0 +1,45 @@
+
+
+.ItemHeader {
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cuerpoItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ItemImag {
+    width: 25vw;
+    border-radius: 7%;
+    padding: 10px;
+}
+
+.infoItem {
+    padding: 10px;
+}
+
+.categoriaItem {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.precioItem {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.ItemFooter {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.Option {
+    text-decoration: none;
+    color: black;
+}

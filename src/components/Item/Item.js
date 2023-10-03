@@ -1,10 +1,6 @@
 import { Link } from 'react-router-dom'
 import './Item.css'
 
-<h1 className="greetingTienda">
-    Tienda
-</h1>
-
 const Item = ({ id, nombre, categoria, unidades, precio, img }) => {
     return (
         <section className="tienda" >
