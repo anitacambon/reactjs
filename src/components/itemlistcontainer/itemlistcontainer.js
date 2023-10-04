@@ -5,13 +5,13 @@ import { getDocs, collection, query, where } from 'firebase/firestore'
 import { db } from '../../services/firebase/firebaseConfig'
 
 
-
-
 const ItemListContainer = ({ greeting }) => {
     const [products, setProducts] = useState([])
+    const [loading, setLoading] = useState(false)
     const { categoria } = useParams()
 
     useEffect(() => {
+        setLoading(true)
         const collectionRef = categoria
             ? query(collection(db, 'items'), where('categoria', '==', categoria))
             : collection(db, 'items')
@@ -27,12 +27,19 @@ const ItemListContainer = ({ greeting }) => {
             .catch(error => {
                 console.log(error)
             })
+            .finally(() => setLoading(false))
     }, [categoria])
 
     return (
         <div>
-            <h1>{greeting}</h1>
-            <ItemList products={products} />
+            {
+            loading 
+            ? <p>Cargando...</p>
+            : <div>
+                <h1>{greeting}</h1>
+                <ItemList products={products} />
+            </div>
+            }
         </div>
     )
 }

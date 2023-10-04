@@ -10,9 +10,10 @@ import ItemListContainer from './components/itemlistcontainer/itemlistcontainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import Cart from './components/Cart/Cart'
 import { CartProvider } from './context/CartContext'
-
 import "bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
+import Checkout from './components/CheckOut/checkout'
+
 
 
 
@@ -34,6 +35,7 @@ function App() {
             <Route path='/categoria/:categoria' element={<ItemListContainer />} />
             <Route path='/products/:id' element={<ItemDetailContainer />} />
             <Route path='/cart' element={<Cart />} />
+            <Route path='/checkout' element={<Checkout />} />
           </Routes>
         </BrowserRouter>
       </CartProvider>

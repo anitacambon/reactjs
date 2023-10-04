@@ -10,11 +10,15 @@ const Cart = () => {
         <div>
             {cart.length
                 ? <div>
+
                     {cart.map(i => <CartItem key={i.id} {...i} />)}
                     <h4>Total: ${totalEnCarrito()} </h4>
-                    <div>
-                        <Link to='/cheackout' className="OptionFC btn btn-outline-dark">Finalizar compra</Link>
+                    <div className="navbar-collapse">
                         <button onClick={() => clearCart()} className="vaciar btn btn-danger">Vaciar Carrito</button>
+
+                    </div>
+                    <div>
+                        <Link to='/checkout' className="OptionFC btn btn-outline-dark">Finalizar compra</Link>
                     </div>
                 </div>
                 : <div>
@@ -24,9 +28,9 @@ const Cart = () => {
 
 
 
-            
-            
-            
+
+
+
 
         </div>
     )
