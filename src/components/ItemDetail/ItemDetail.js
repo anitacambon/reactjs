@@ -13,10 +13,10 @@ const ItemDetail = ({ id, nombre, categoria, unidades, precio, img }) => {
         setQuantityAdded(quantity)
 
         const item = {
-            id, nombre, precio
+            id, nombre, precio, img
         }
 
-        addItem(item, quantity)
+        addItem(item, quantity, img)
     }
 
     return (
@@ -28,9 +28,7 @@ const ItemDetail = ({ id, nombre, categoria, unidades, precio, img }) => {
                 </h2>
             </header>
             <div className='cuerpoItem'>
-                <figure>
-                    <img src={`/img/${img}`} alt={nombre} className='ItemImag' />
-                </figure>
+                <img src={`/img/${img}`} alt={nombre} className='ItemImag' />
                 <section className='infoItem'>
                     <p className='categoriaItem'>
                         {categoria}
@@ -44,13 +42,13 @@ const ItemDetail = ({ id, nombre, categoria, unidades, precio, img }) => {
                     <p className='precioItem'>
                         Precio: ${precio}
                     </p>
-                    
+
                 </section>
                 <footer className='ItemFooter'>
                     {
                         quantityAdded > 0 ? (
                             <button type="button" className="btn btn-warning">
-                            <Link to='/cart' className='Option'>Ver carrito</Link></button>
+                                <Link to='/cart' className='Option'>Ver carrito</Link></button>
                         ) : (
                             <ItemCount initial={1} stock={unidades} onAdd={handleOnAdd} />
                         )

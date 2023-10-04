@@ -2,12 +2,14 @@ import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
 import '../CartItem/CartItem.css'
 
-const CartItem = ({ id, nombre, precio, quantity, subtotal }) => {
+const CartItem = ({ id, nombre, precio, quantity, subtotal, img}) => {
     const { removeItem } = useContext(CartContext)
     return (
-        <div className="infoCart">
+        <div className="CartItem">
+            <img src={`/img/${img}`} alt={nombre} width={'130rem'}/>
             <p>{nombre}</p>
-            <p>Cant: {quantity}</p>
+            <p>{quantity} x</p>
+            <p>${precio}</p>
             <p>Subtotal ${subtotal = precio * quantity}</p>
 
             <button className="btn btn-outline-danger" onClick={() => removeItem(id)}><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-trash3" viewBox="0 0 16 16">

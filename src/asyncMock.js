@@ -1,4 +1,4 @@
-const products = [
+/*const products = [
 
     {
         id: 1001,
@@ -273,4 +273,4 @@ export const getProductByCategoria = (categoria) => {
             
         }, 500)
     })
-}
+}*/

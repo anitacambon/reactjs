@@ -65,12 +65,13 @@ const NavBar = () => {
                                 }
                             </ul>
                         </li>
-                        <li ><CartWidget /></li>
+                        <li ></li>
                         
                     </ul>
-                    
+                    <CartWidget />
                 </div>
             </div >
+            
         </nav >
     )
 }

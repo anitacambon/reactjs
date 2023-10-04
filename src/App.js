@@ -19,8 +19,8 @@ import "bootstrap/dist/css/bootstrap.min.css"
 function App() {
   return (
     <div className='App'>
-      <BrowserRouter>
-        <CartProvider>
+      <CartProvider>
+        <BrowserRouter>
           <div className='NavBar'>
             <NavBar />
           </div>
@@ -35,8 +35,8 @@ function App() {
             <Route path='/products/:id' element={<ItemDetailContainer />} />
             <Route path='/cart' element={<Cart />} />
           </Routes>
-        </CartProvider>
-      </BrowserRouter>
+        </BrowserRouter>
+      </CartProvider>
     </div>
   )
 }

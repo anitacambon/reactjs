@@ -14,7 +14,6 @@
 
 .greetingTienda {
     padding: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .CardItem {
@@ -28,7 +27,6 @@
 }
 
 .categoriaTienda {
-    font-family: 'Courier New', Courier, monospace;
     font-style: italic;
     font-size: 0.8rem;
 }

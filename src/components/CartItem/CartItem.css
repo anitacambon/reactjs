@@ -1,8 +1,7 @@
-.infoCart {
+.CartItem {
     display: flex;
-    align-items: center;
     justify-content: space-around;
-    padding: 5px;
-    border-bottom: 1px solid rgb(172, 162, 162);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+    padding: 10px;
+    
 }
