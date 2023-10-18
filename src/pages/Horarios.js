@@ -1,8 +1,11 @@
 const Horarios = () => {
-    return(
-        <h1 className="greetingHorarios">
-            Horarios
-        </h1>
+    return (
+        <div>
+            <h1 className="greetingHorarios">
+                Horarios
+            </h1>
+
+        </div>
     )
 }
 

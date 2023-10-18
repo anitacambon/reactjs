@@ -7,7 +7,8 @@
     display: flex;
     justify-content: center;
     padding-left: 20px;
-    font-weight: 600;
+    font-family: 'Russo One', sans-serif;
+    font-size: 20em;
 }
 
 .navbar-logo {
@@ -34,3 +35,4 @@
 .navbar-nav {
     display: none;
 }
+
