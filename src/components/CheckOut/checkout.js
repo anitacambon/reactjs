@@ -3,6 +3,7 @@ import React, { useState, useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import { db } from "../../services/firebase/firebaseConfig";
 import { Link } from "react-router-dom";
+import './checkout.css'
 
 const Checkout = () => {
     const [user, setUser] = useState({})
@@ -47,7 +48,7 @@ const Checkout = () => {
                     <h5>Su id de regristro es: {orderId} </h5>
                     <Link to='/ver-todo' className="btn btn-dark">Volver a la tienda</Link>
                 </div>
-                : <div>
+                : <div className="check">
                     <h2>Terminar compra</h2>
                     <h5>Completa con tus datos</h5>
                     <form onSubmit={finalizarCompra} className="container">

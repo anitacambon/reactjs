@@ -5,17 +5,6 @@
     flex-wrap: wrap;
 }
 
-.tienda {
-    padding-top: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.greetingTienda {
-    padding: 10px;
-}
-
 .CardItem {
     margin: 10px;
     padding: 10px;
