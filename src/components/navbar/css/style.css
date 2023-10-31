@@ -1,9 +1,15 @@
-.container-fluid {
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    padding: 10px;
-    height: 15vh;
+@media (max-width: 990px) {
+    .container-fluid {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        padding: 10px;
+        height: 10vh;
+    }
+
+    .navbar-logo {
+        height: 10vh;
+    }
 }
 
 .navbar-brand {
@@ -29,6 +35,9 @@
     padding-right: 15px;
 }
 
+.dropdown-menu {
+    background-color: whitesmoke;
+}
 
 
 
@@ -39,7 +48,12 @@
     padding-right: 6%;
 }
 
-.navbar-nav {
-    display: none;
+
+.container-fluid {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 10px;
+    height: 15vh;
 }
 }
