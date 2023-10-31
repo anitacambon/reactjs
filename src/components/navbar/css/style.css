@@ -4,12 +4,11 @@
         top: 0;
         z-index: 2;
         padding: 10px;
-        height: 10vh;
+        height: 7vh;
     }
 
     .navbar-logo {
-        height: 9vh;
-        ;
+        height: 6vh;
     }
 
     #navbarNavDropdown {

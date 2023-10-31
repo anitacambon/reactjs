@@ -1,8 +1,6 @@
-.ListGroup {
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-    flex-wrap: wrap;
+.CardItem{
+    display: grid;
+    grid-template-columns: 2fr;
 }
 
 .CardItem {
@@ -21,7 +19,7 @@
 }
 
 .imagenTienda {
-    width: 15vw;
+    width: 15%;
     border-radius: 3%;
 }
 
