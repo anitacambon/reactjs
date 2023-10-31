@@ -8,21 +8,25 @@
     }
 
     .navbar-logo {
-        height: 10vh;
+        height: 9vh;
+        ;
+    }
+
+    #navbarNavDropdown {
+        background-color: whitesmoke;
+        width: fit-content;
+    }
+
+    .navbar-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Russo One', sans-serif;
+        font-size: 1.8em;
     }
 }
 
-.navbar-brand {
-    display: flex;
-    justify-content: center;
-    padding-left: 20px;
-    font-family: 'Russo One', sans-serif;
-    font-size: 1.8em;
-}
 
-.navbar-logo {
-    height: 15vh;
-}
 
 .nav-item {
     font-weight: 600;
@@ -35,25 +39,31 @@
     padding-right: 15px;
 }
 
-.dropdown-menu {
-    background-color: whitesmoke;
-}
-
-
 
 @media (min-width: 991px) {
-#navbarNavDropdown {
-    display: flex;
-    justify-content: right;
-    padding-right: 6%;
-}
+    #navbarNavDropdown {
+        display: flex;
+        justify-content: right;
+        padding-right: 6%;
+    }
 
 
-.container-fluid {
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    padding: 10px;
-    height: 15vh;
-}
+    .container-fluid {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        padding: 10px;
+        height: 15vh;
+    }
+
+    .navbar-brand {
+        display: flex;
+        justify-content: center;
+        font-family: 'Russo One', sans-serif;
+        font-size: 1.8em;
+    }
+
+    .navbar-logo {
+        height: 15vh;
+    }
 }

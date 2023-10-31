@@ -2,8 +2,6 @@ import CARcaserosGi from './img/CARcaserosGi.jpg'
 import CARdevotoGi from './img/CARdevotoGi.jpg'
 import CARstrikingCaseros from './img/CARstrikingCaseros.jpg'
 import CARstrikingDevoto from './img/CARstrikingDevoto.jpg'
-import CarMobAguss from './img/CarMobAguss.jpg'
-import CarMobJu from './img/CarMobJu.jpg'
 import './home.css'
 
 const Home = () => {
