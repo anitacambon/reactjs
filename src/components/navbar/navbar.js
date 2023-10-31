@@ -31,14 +31,14 @@ const routes = [
 
 const NavBar = () => {
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
                 <img className="navbar-logo" src={logo_header} alt="logo"></img>
                 <NavLink className="navbar-brand" to='/' >Academia MAGNA</NavLink>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="d-flex collapse navbar-collapse" id="navbarNavDropdown">
+                <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav">
                         <li className="nav-item">
                             <NavLink className="nav-link active" aria-current="page" to='/actividades' >Actividades</NavLink>

@@ -1,0 +1,19 @@
+@media (max-width: 990px) {
+    .carousel-inner {
+        display: none;
+    }
+    .carousel-inner.mobile {
+        display: flex;
+    }
+
+}
+
+@media (min-width: 991px) {
+    .carousel-inner.mobile {
+        display: none;
+    }
+
+    .carousel-inner {
+        display: flex;
+    }
+}
