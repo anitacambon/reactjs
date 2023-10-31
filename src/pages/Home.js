@@ -19,10 +19,10 @@ const Home = () => {
 
                 <div className="carousel-inner mobile">
                     <div className="carousel-item active" data-bs-interval="4000">
-                        <img src={CarMobAguss} className="d-block w-100" alt="imagen caseros"></img>
+                        <img src={CarMobJu} className="d-block w-100" alt="imagen ju"></img>
                     </div>
                     <div className="carousel-item" data-bs-interval="4000">
-                        <img src={CarMobJu} className="d-block w-100" alt="imagen devoto"></img>
+                        <img src={CarMobAguss} className="d-block w-100" alt="imagen agus"></img>
                     </div>
                     <div className="carousel-item" data-bs-interval="4000">
                         <img src={CARstrikingCaseros} className="d-block w-100" alt="striking caseros"></img>
