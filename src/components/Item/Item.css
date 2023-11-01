@@ -5,29 +5,16 @@
     flex-wrap: wrap;
 }
 
-.CardItem {
-    margin: 10px;
-    padding: 10px;
-    background-color: rgba(182, 182, 173, 0.342);
-    width: fit-content;
-    height: fit-content;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px gray;
-}
-
 .categoriaTienda {
     font-style: italic;
     font-size: 0.8rem;
 }
 
-.imagenTienda {
-    width: 15vw;
-    border-radius: 3%;
-}
-
 .infoTienda {
     display: grid;
     grid-column: 1;
+    align-items: center;
+    justify-content: center;
 }
 
 .precioTienda {
@@ -35,7 +22,43 @@
     font-weight: 600;
 }
 
-.botonTienda{
+.botonTienda {
     text-decoration: none;
     color: black;
+}
+
+@media (max-width: 990px) {
+    .CardItem {
+        margin: 10px;
+        padding: 10px;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(182, 182, 173, 0.342);
+        width: 35vw;
+        height: fit-content;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px gray;
+    }
+
+    .imagenTienda {
+        width: 30vw;
+    }
+
+}
+
+@media (min-width: 991px) {
+    .CardItem {
+        margin: 10px;
+        padding: 10px;
+        background-color: rgba(182, 182, 173, 0.342);
+        width: 25vw;
+        height: fit-content;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px gray;
+    }
+
+    .imagenTienda {
+        width: 20vw;
+    }
 }
