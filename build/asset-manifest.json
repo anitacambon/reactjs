@@ -1,16 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.fbc88b69.css",
-    "main.js": "/static/js/main.882e1417.js",
+    "main.css": "/static/css/main.171b0177.css",
+    "main.js": "/static/js/main.361f2ec9.js",
     "static/js/787.b0e29ad6.chunk.js": "/static/js/787.b0e29ad6.chunk.js",
+    "static/media/CarMobJu.jpg": "/static/media/CarMobJu.81b6ffec9d5de4301199.jpg",
+    "static/media/CarMobboxeo.jpg": "/static/media/CarMobboxeo.16605185febd085850c4.jpg",
+    "static/media/CARstrikingCaseros.jpg": "/static/media/CARstrikingCaseros.c8cabc95dc5bde9e743d.jpg",
+    "static/media/CARstrikingDevoto.jpg": "/static/media/CARstrikingDevoto.b005ec968e00243ccecd.jpg",
+    "static/media/CarMobzazaNogi.jpg": "/static/media/CarMobzazaNogi.8507ea3f3f003c917e85.jpg",
+    "static/media/CarMobAguss.jpg": "/static/media/CarMobAguss.7932dba27a3279a5d815.jpg",
+    "static/media/CARdevotoGi.jpg": "/static/media/CARdevotoGi.3c9474d9b1cd31256398.jpg",
+    "static/media/CARcaserosGi.jpg": "/static/media/CARcaserosGi.f1aca2aedac37ccf89a0.jpg",
+    "static/media/CarMobKick.jpeg": "/static/media/CarMobKick.d4b01371721a5c63e3ee.jpeg",
     "static/media/logo_header.jpeg": "/static/media/logo_header.4e28a97bb06909d38b4d.jpeg",
     "index.html": "/index.html",
-    "main.fbc88b69.css.map": "/static/css/main.fbc88b69.css.map",
-    "main.882e1417.js.map": "/static/js/main.882e1417.js.map",
+    "main.171b0177.css.map": "/static/css/main.171b0177.css.map",
+    "main.361f2ec9.js.map": "/static/js/main.361f2ec9.js.map",
     "787.b0e29ad6.chunk.js.map": "/static/js/787.b0e29ad6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbc88b69.css",
-    "static/js/main.882e1417.js"
+    "static/css/main.171b0177.css",
+    "static/js/main.361f2ec9.js"
   ]
 }
