@@ -1,6 +1,6 @@
 import CarouselDesktop from '../components/CarouselDesktop/CarouselDesktop'
 import CarouselMobile from '../components/CarouselMobile/CarouselMobile'
-import './Home.css'
+import './css/HomeStyle.css'
 
 const Home = () => {
     return (
