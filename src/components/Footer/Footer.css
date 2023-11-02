@@ -1,0 +1,46 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(51, 41, 41);
+    height: 20vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 2fr;
+}
+
+.foo-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.messenger,
+.insta-caseros,
+.insta-devoto,
+.facebook,
+.contacto,
+.seguinos,
+.horarios,
+.info-footer,
+.pie-footer {
+    text-decoration: none;
+    color: white;
+}
+
+p.info-footer, p {
+    margin-bottom: 0px;
+}
+
+.div-footer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    margin-bottom: 1rem;
+}

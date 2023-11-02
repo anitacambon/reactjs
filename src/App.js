@@ -13,6 +13,7 @@ import { CartProvider } from './context/CartContext'
 import "bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Checkout from './components/CheckOut/checkout'
+import Footer from './components/Footer/Footer'
 
 
 
@@ -37,6 +38,9 @@ function App() {
             <Route path='/cart' element={<Cart />} />
             <Route path='/checkout' element={<Checkout />} />
           </Routes>
+          <div className='NavBar'>
+            <Footer />
+          </div>
         </BrowserRouter>
       </CartProvider>
     </div>

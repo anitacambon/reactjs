@@ -7,13 +7,6 @@ const CarouselDesktop = () => {
     return (
         <div >
             <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
-                <div className="carousel-caption d-none d-md-block">
-                    <h1 className="carousel-caption d-none d-md-block">
-                        Academia MAGNA
-                    </h1>
-                    <p>Centro de Entrenamiento de Artes Marciales y Deportes de Combate</p>
-                </div>
-
                 <div className="carousel-inner">
                     <div className="carousel-item active" data-bs-interval="4000">
                         <img src={CARcaserosGi} className="d-block w-100" alt="imagen caseros"></img>
