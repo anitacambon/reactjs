@@ -1,8 +1,10 @@
 .footer {
-    position: fixed;
+    margin: 0;
+    padding: 0;
+    position: sticky;
     bottom: 0;
-    background-color: rgb(51, 41, 41);
-    height: 20vh;
+    background-color: rgb(32, 29, 29);
+    height: fit-content;
     width: 100vw;
     display: grid;
     grid-template-columns: 3fr;
@@ -13,6 +15,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 1.5rem;
 }
 
 .messenger,
@@ -26,6 +29,12 @@
 .pie-footer {
     text-decoration: none;
     color: white;
+    font-size: 0.8rem;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 1.7rem;
 }
 
 p.info-footer, p {
@@ -42,5 +51,17 @@ p.info-footer, p {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
-    margin-bottom: 1rem;
+    font-size: 0.6rem;
+    margin-bottom: 1.5rem;
+    padding-top: 1.7rem;
+}
+
+p.info-footer-firma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p.firma {
+    padding-left: 7px;
 }

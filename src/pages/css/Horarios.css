@@ -1,0 +1,23 @@
+.greetingHorarios {
+    padding: 10px;
+}
+
+div.vista-horarios {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sede {
+    display: flex;
+    padding: 10px;
+    font-weight: 600;
+}
+
+img.horarios {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}

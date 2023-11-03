@@ -1,6 +1,10 @@
 body {
   margin: 0;
+  font-family: 'Luxurious Script', cursive;
+  font-family: 'Noto Sans NKo Unjoined', sans-serif;
   font-family: 'Roboto', sans-serif;
+  font-family: 'Russo One', sans-serif;
+  font-family: 'Spline Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
