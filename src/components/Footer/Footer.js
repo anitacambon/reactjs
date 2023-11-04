@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className="footer">
             <div className="foo-info">
-                <div className="div-footer">
+                <div className="div-footer-h">
                     <h4 className="horarios">HORARIOS</h4>
                     <p className="info-footer">Lunes a Viernes 8 a 22 hs</p>
                     <p className="info-footer">Sabados 9 a 14 hs</p>

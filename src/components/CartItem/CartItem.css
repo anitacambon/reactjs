@@ -1,7 +1,39 @@
+@media (max-width: 990px) {
+    .CartItem {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+    }
+
+    p.nombre {
+        font-size: 1.1rem;
+    }
+
+    .cantidad{
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    button.btn.btn-dark {
+        font-size: 0.8rem;
+    }
+
+    .subtotal {
+        font-weight: 700;
+    }
+
+    button.bi.bi-trash3 {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1.8rem;
+    }
+
+}
+
 .CartItem {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
-    padding-top: 90px;
 }

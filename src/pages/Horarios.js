@@ -11,13 +11,15 @@ const Horarios = () => {
                 Horarios
             </h1>
 
-            <div className='vista-horarios'>
-                <div>
-                    <h2 className='sede'>Sede Villa Devoto</h2>
-                    <img src={horariosDevoto} className="horarios" alt="horarios devoto"></img>
-                    <img src={horariosStrikDev} className="horarios" alt="horarios devoto striking"></img>
+            <div className='container vista-horarios'>
+                <div className='row'>
+                    <div className='col'>
+                        <h2 className='sede'>Sede Villa Devoto</h2>
+                        <img src={horariosDevoto} className="horarios" alt="horarios devoto"></img>
+                        <img src={horariosStrikDev} className="horarios" alt="horarios devoto striking"></img>
+                    </div>
                 </div>
-                <div>
+                <div className='col'>
                     <h2 className='sede'> Sede Caseros</h2>
                     <img src={horariosCaseros} className="horarios" alt="horario caseros"></img>
                     <img src={horariosStriking} className="horarios" alt="horarios caseros striking"></img>

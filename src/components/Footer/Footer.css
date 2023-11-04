@@ -1,3 +1,10 @@
+@media (max-width: 990px) {
+    .div-footer-h {
+        display: none;
+    }
+    
+}
+
 .footer {
     margin: 0;
     padding: 0;

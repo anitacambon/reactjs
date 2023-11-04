@@ -1,37 +1,65 @@
+@media (max-width: 990px) {
+    .ItemImag {
+        width: 90vw;
+        border-radius: 0px;
+    }
+
+    .ItemHeader {
+        font-size: 2rem;
+        font-weight: 600;
+        padding: 0px;
+    }
+
+    .infoItem {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ItemFooter {
+        display: inline-block;
+        justify-content: center;
+        padding: 0px;
+    }
+}
+
 .ItemHeader {
-    padding: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 .cuerpoItem {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
 .ItemImag {
-    width: 25vw;
-    border-radius: 7%;
+    width: 45vw;
     padding: 10px;
 }
 
 .infoItem {
     padding: 10px;
+    display: inline-block;
+    justify-content: left;
+    align-items: baseline;
 }
 
 .categoriaItem {
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
 }
 
 .precioItem {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     font-weight: 600;
 }
 
-.ItemFooter {
+footer.ItemFooter {
     padding: 10px;
     display: flex;
     align-items: center;
@@ -40,4 +68,8 @@
 .Option {
     text-decoration: none;
     color: black;
+}
+
+button.btn.btn-dark {
+    font-size: 2rem;
 }

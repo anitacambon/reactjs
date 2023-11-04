@@ -12,7 +12,6 @@ const Item = ({ id, nombre, categoria, unidades, precio, img }) => {
                     <div className="infoTienda">
                         <h3 className="nombreTienda">{nombre}</h3>
                         <span className="precioTienda">${precio}</span>
-                        <span className="unidadesTienda">Stock: {unidades}</span>
                         <span className="categoriaTienda">{categoria}</span>
                         <button type="button" className="btn btn-warning"><Link to={`/products/${id}`} className="botonTienda">
                             Ver más...

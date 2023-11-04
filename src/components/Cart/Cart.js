@@ -5,18 +5,15 @@ import { Link } from "react-router-dom";
 import './Cart.css'
 
 const Cart = () => {
-    const { cart, clearCart, totalEnCarrito } = useContext(CartContext)
+    const { cart, totalEnCarrito } = useContext(CartContext)
     return (
-        <div>
+        <div className="cart">
             {cart.length
                 ? <div>
 
                     {cart.map(i => <CartItem key={i.id} {...i} />)}
                     <h4>Total: ${totalEnCarrito()} </h4>
-                    <div className="navbar-collapse">
-                        <button onClick={() => clearCart()} className="vaciar btn btn-danger">Vaciar Carrito</button>
 
-                    </div>
                     <div>
                         <Link to='/checkout' className="OptionFC btn btn-outline-dark">Finalizar compra</Link>
                     </div>

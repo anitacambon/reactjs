@@ -1,12 +1,23 @@
-.greetingHorarios {
-    padding: 10px;
+@media (max-width: 990px) {
+    .container.vista-horarios {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img.horarios {
+        width: 90vw;
+        padding: 10px;
+    }
+
+    .horarios:hover {
+        display: none;
+    }
 }
 
-div.vista-horarios {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.greetingHorarios {
+    padding: 10px;
+    font-weight: 600;
 }
 
 .sede {
@@ -15,9 +26,13 @@ div.vista-horarios {
     font-weight: 600;
 }
 
-img.horarios {
-    width: 45%;
-    display: flex;
-    justify-content: center;
-    padding: 15px;
+@media (min-width: 991px) {
+    img.horarios {
+        width: 45%;
+        padding: 15px;
+    }
+
+    .horarios:hover {
+        width: 70vw;
+    }
 }

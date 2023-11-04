@@ -34,15 +34,17 @@
         display: inline-block;
         justify-content: center;
         align-items: center;
-        background-color: rgba(182, 182, 173, 0.342);
-        width: 35vw;
+        background-color: whitesmoke;
+        width: 80vw;
         height: fit-content;
-        border-radius: 20px;
-        box-shadow: 5px 5px 5px gray;
+        box-shadow: 5px 5px 5px 5px rgb(216, 216, 216);
     }
 
-    .imagenTienda {
-        width: 30vw;
+    img.imagenTienda {
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        padding-right: 15px;
     }
 
 }
