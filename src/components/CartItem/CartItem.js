@@ -11,7 +11,7 @@ const CartItem = ({ id, nombre, precio, unidades, quantity, subtotal, img}) => {
             <img src={`/img/${img}`} alt={nombre} width={'100rem'} />
             <div>
                 <p className="nombre">{nombre}</p>
-                <p className="cantidad">{quantity} x</p>
+                <p className="cantidad">{quantity} u.</p>
                 <p className="subtotal">${subtotal = precio * quantity}</p>
             </div>
             <button className="btn btn-outline-danger" onClick={() => removeItem(id)}><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-trash3" viewBox="0 0 16 16">

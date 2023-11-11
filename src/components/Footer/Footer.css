@@ -2,7 +2,7 @@
     .div-footer-h {
         display: none;
     }
-    
+
 }
 
 .footer {
@@ -33,18 +33,20 @@
 .seguinos,
 .horarios,
 .info-footer,
+.info-footer-firma,
 .pie-footer {
     text-decoration: none;
     color: white;
     font-size: 0.8rem;
 }
 
-h4 {
+h3 {
     font-weight: 700;
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 
-p.info-footer, p {
+h6.info-footer,
+h6 {
     margin-bottom: 0px;
 }
 
@@ -58,17 +60,17 @@ p.info-footer, p {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
-    font-size: 0.6rem;
+    font-size: 0.4rem;
     margin-bottom: 1.5rem;
     padding-top: 1.7rem;
 }
 
-p.info-footer-firma {
+h6.info-footer-firma {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-p.firma {
+h6.firma {
     padding-left: 7px;
 }

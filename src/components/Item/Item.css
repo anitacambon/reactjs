@@ -53,11 +53,10 @@
     .CardItem {
         margin: 10px;
         padding: 10px;
-        background-color: rgba(182, 182, 173, 0.342);
+        background-color: rgba(238, 238, 233, 0.342);
         width: 25vw;
         height: fit-content;
-        border-radius: 20px;
-        box-shadow: 5px 5px 5px gray;
+        box-shadow: 5px 5px 5px rgb(192, 190, 190);
     }
 
     .imagenTienda {

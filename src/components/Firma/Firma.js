@@ -3,7 +3,7 @@ import './Firma.css'
 const Firma = () => {
     return (
         <div >
-            <p className="firma">Ana Cambon</p>
+            <h6 className="firma">Ana Cambon</h6>
         </div>
     )
 }

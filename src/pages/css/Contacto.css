@@ -1,0 +1,42 @@
+h1.greeting {
+    font-weight: 700;
+    font-size: 3rem;
+    padding-bottom: 15px;
+}
+
+.container.vista-contacto{
+    padding: 15px;
+}
+
+ul, h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    list-style: none;
+    padding: 10px;
+}
+
+input.form-control,
+textarea.form-control {
+    border-radius: 20px;
+    margin: 15px;
+}
+
+textarea.form-control {
+    height: 30vh;
+}
+
+.container.vista-contacto {
+    width: 60vw;
+}
+
+.btn.btn-secondary{
+    border-radius: 15px;
+}
+
+
+@media (max-width: 990px) {
+    textarea.form-control {
+        height: 15vh;
+    }
+}
+
