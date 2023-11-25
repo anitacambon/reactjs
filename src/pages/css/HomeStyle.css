@@ -1,3 +1,21 @@
+p {
+    margin-bottom: 0rem;
+}
+
+.Leyenda {
+    background-color: black;
+    width: 100vw;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    color: whitesmoke;
+    font-size: smaller;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Body {
+    background-color: rgb(238, 239, 245);
+}
+
 @media (max-width: 990px) {
     .CarouselDesktop {
         display: none;

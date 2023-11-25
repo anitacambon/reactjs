@@ -6,7 +6,7 @@ import './css/Horarios.css'
 
 const Horarios = () => {
     return (
-        <div>
+        <div className='Body'>
             <h1 className="greetingHorarios">
                 Horarios
             </h1>

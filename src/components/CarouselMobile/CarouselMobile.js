@@ -3,6 +3,7 @@ import CarMobAguss from './img/CarMobAguss.jpg'
 import CarMobboxeo from './img/CarMobboxeo.jpg'
 import CarMobzazaNogi from './img/CarMobzazaNogi.jpg'
 import CarMobKick from './img/CarMobKick.jpeg'
+import CarMobEscuelita from './img/CarMobEscuelita.jpeg'
 import './CarouselMobile.css'
 
 const CarouselMobile = () => {
@@ -12,6 +13,9 @@ const CarouselMobile = () => {
                 <div className="carousel-inner">
                     <div className="carousel-item active" data-bs-interval="3000">
                         <img src={CarMobJu} className="d-block w-100" alt="imagen ju"></img>
+                    </div>
+                    <div className="carousel-item" data-bs-interval="3000">
+                        <img src={CarMobEscuelita} className="d-block w-100" alt="imagen escuelita"></img>
                     </div>
                     <div className="carousel-item" data-bs-interval="3000">
                         <img src={CarMobAguss} className="d-block w-100" alt="imagen aguss"></img>

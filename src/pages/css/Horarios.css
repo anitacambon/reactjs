@@ -1,3 +1,7 @@
+.Body {
+    background-color: rgb(238, 239, 245);
+}
+
 @media (max-width: 990px) {
     .container.vista-horarios {
         display: inline-block;

@@ -4,7 +4,11 @@ import './css/HomeStyle.css'
 
 const Home = () => {
     return (
-        <div>
+        <div className='Body'>
+            <div className='Leyenda'>
+                Centro de Entrenamiento de Artes Marciales y Deportes de Combate
+            </div>
+
             <div className='CarouselDesktop'>
                 <CarouselDesktop />
             </div>
