@@ -1,74 +1,70 @@
-h1 {
-    padding: 15px;
-    font-weight: 600;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+p.text, p.prof {
+    margin-bottom: 0rem;
 }
 
-.Body {
-    background-color: rgb(238, 239, 245);
+div.text {
+    font-size: larger;
 }
 
-p {
-    margin: 0;
+h5 {
+    padding-top: 20px;
+    text-decoration: underline;
 }
-
-a.insta {
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-}
-
-h3 {
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.text,
-.text-esc {
-    padding: 15px;
-    padding-top: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.prof {
-    font-size: small;
-}
-
-hr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
 
 @media (max-width: 990px) {
-    .img-act {
-        width: 80vw;
+    .actividad {
+        display: inline-block;
     }
 
-    .actividadFin {
-        padding-bottom: 15px;
+    .img-act {
+        width: 90vw;
+    }
+
+    div.text {
+        padding: 10px;
+    }
+
+    a.insta {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
     }
 }
 
 @media (min-width: 991px) {
+    h1 {
+        padding: 15px;
+    }
+    
+    .actividad {
+        display: grid;
+        grid-template-columns: 2fr;
+        height: min-content;
+    }
+    
+    
     .img-act {
         width: 40vw;
         float: left;
         padding: 10px;
     }
+    
+    
 
-    h4,
-    h5,
-    p{
-        display: inline;
-        float: right;
+    p.text {
+        margin-bottom: 0rem;
     }
-
-    .text-esc {
-        font-size: small;
+    
+    
+    
+    p {
+        margin-bottom: 0rem;
+    }
+    
+    a.insta {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
     }
 }
+

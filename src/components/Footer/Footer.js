@@ -6,8 +6,8 @@ const Footer = () => {
     return (
         <div className="footer">
             <div className="foo-info">
-                <div className="div-footer-h">
-                    <h3 className="horarios">HORARIOS</h3>
+                <div className="div-footer">
+                    <h3 className="horario">HORARIOS</h3>
                     <h6 className="info-footer">Lunes a Viernes 8 a 22 hs</h6>
                     <h6 className="info-footer">Sabados 9 a 14 hs</h6>
                     <h6 className="info-footer">Domingo CERRADO</h6>
