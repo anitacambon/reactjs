@@ -1,5 +1,5 @@
 @media (max-width: 990px) {
-    .div-footer-h {
+    .horario, .info-footer.horario {
         display: none;
     }
 
@@ -35,7 +35,7 @@
 .contacto,
 .seguinos,
 .horario,
-.info-footer,
+.info-footer, .info-footer.horario
 .info-footer-firma,
 .pie-footer {
     text-decoration: none;

@@ -8,9 +8,9 @@ const Footer = () => {
             <div className="foo-info">
                 <div className="div-footer">
                     <h3 className="horario">HORARIOS</h3>
-                    <h6 className="info-footer">Lunes a Viernes 8 a 22 hs</h6>
-                    <h6 className="info-footer">Sabados 9 a 14 hs</h6>
-                    <h6 className="info-footer">Domingo CERRADO</h6>
+                    <h6 className="info-footer horario">Lunes a Viernes 8 a 22 hs</h6>
+                    <h6 className="info-footer horario">Sabados 9 a 14 hs</h6>
+                    <h6 className="info-footer horario">Domingo CERRADO</h6>
                 </div>
                 <div className="div-footer">
                     <h3 className="contacto">CONTACTO</h3>
